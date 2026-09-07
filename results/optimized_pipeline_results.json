@@ -1,0 +1,56 @@
+{
+    "Timeline": "Excluded 2021-2022 Crisis",
+    "Target": "Stationary Delta Reconstructed to Price Level",
+    "Models": {
+        "Enhanced_Random_Forest": {
+            "R2": 0.6176,
+            "Explained_Variance": 0.6191,
+            "RMSE": 52.953,
+            "MAE": 39.7842,
+            "Directional_Accuracy_Pct": 57.37
+        },
+        "Hist_Gradient_Boosting": {
+            "R2": 0.6471,
+            "Explained_Variance": 0.6538,
+            "RMSE": 50.8717,
+            "MAE": 37.7832,
+            "Directional_Accuracy_Pct": 55.53
+        },
+        "Extra_Trees": {
+            "R2": 0.6435,
+            "Explained_Variance": 0.6455,
+            "RMSE": 51.1291,
+            "MAE": 37.1333,
+            "Directional_Accuracy_Pct": 56.16
+        },
+        "Ensemble_Blend": {
+            "R2": 0.6515,
+            "Explained_Variance": 0.6521,
+            "RMSE": 50.5567,
+            "MAE": 37.3225,
+            "Directional_Accuracy_Pct": 57.9
+        }
+    },
+    "Top_20_Features": {
+        "pld_diff_lag1": 0.0799833495499915,
+        "intraday_spread": 0.07408863896548866,
+        "cmo_pld_gap": 0.06608547573993764,
+        "pld_ratio_lag1": 0.05207875849860377,
+        "pld_ratio_lag7": 0.040930686419972814,
+        "pld_daily_min": 0.03605888323757906,
+        "pld_diff_lag7": 0.03563557486651821,
+        "pld_lag_30d": 0.03141431024994657,
+        "pld_diff_lag14": 0.0302978088260027,
+        "pld_lag_1d": 0.029346980925523774,
+        "pld_diff_lag30": 0.02913904048771359,
+        "pld_daily_max": 0.028531568985495574,
+        "pld_rolling_mean_30d": 0.02674366176418476,
+        "pld_rolling_std_30d": 0.025534705596382094,
+        "cmo_load_spread": 0.02484198703809557,
+        "pld_rolling_std_14d": 0.020926670373748832,
+        "pld_rolling_std_7d": 0.01981114280482861,
+        "emb_pca_3_roll7": 0.01925777814744101,
+        "pld_daily_mean": 0.014451146568341093,
+        "pld_lag_7d": 0.013707938582915222
+    }
+}

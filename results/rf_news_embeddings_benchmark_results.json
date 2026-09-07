@@ -1,0 +1,43 @@
+{
+    "Baseline_Market_Only": {
+        "R2": 0.6924,
+        "Explained_Variance": 0.7046,
+        "RMSE": 57.9597,
+        "MAE": 38.4893
+    },
+    "Market_Plus_Topics": {
+        "R2": 0.6946,
+        "Explained_Variance": 0.7079,
+        "RMSE": 57.7556,
+        "MAE": 38.5035
+    },
+    "Full_Pipeline_With_BGE_Embeddings": {
+        "R2": 0.6979,
+        "Explained_Variance": 0.7121,
+        "RMSE": 57.4486,
+        "MAE": 38.419
+    },
+    "News_Embeddings_Alone": {
+        "R2": -0.4388,
+        "Explained_Variance": -0.2042,
+        "RMSE": 125.3647,
+        "MAE": 104.014
+    },
+    "Top_15_Feature_Importances": {
+        "pld_daily_mean": 0.9393899063960657,
+        "pld_daily_max": 0.02965102321684293,
+        "pld_lag_1d": 0.007155623245587792,
+        "pld_rolling_mean_7d": 0.0027845606177546466,
+        "pld_lag_7d": 0.0026075117029874563,
+        "pld_lag_30d": 0.002542974302033075,
+        "pld_rolling_mean_14d": 0.0020120356665106333,
+        "pld_daily_min": 0.0019417269670853662,
+        "pld_lag_14d": 0.0017585109858715927,
+        "cmo_light_load": 0.0016338620126341709,
+        "cmo_medium_load": 0.0015056905250595872,
+        "pld_rolling_mean_30d": 0.0015051248781252082,
+        "cmo_heavy_load": 0.001297916810797276,
+        "cmo_weekly_mean": 0.0011002287175328738,
+        "news_emb_pca_04": 0.0005208918680372323
+    }
+}

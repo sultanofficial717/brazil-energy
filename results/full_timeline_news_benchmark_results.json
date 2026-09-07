@@ -1,0 +1,63 @@
+{
+    "Timeline": "Full 2018-2026 (Including 2021-2022 Crisis)",
+    "Dataset": "News-Active Days Only (Articles >= 1)",
+    "Total_Rows": 8155,
+    "Train_Rows": 6524,
+    "Test_Rows": 1631,
+    "Comparison": [
+        {
+            "Config": "1. Market Only (No News/Embeddings)",
+            "R2": 0.5818,
+            "Explained_Variance": 0.6024,
+            "RMSE": 52.7023,
+            "MAE": 38.0326,
+            "Directional_Accuracy_Pct": 52.79
+        },
+        {
+            "Config": "2. Market + News Topic & Sentiment",
+            "R2": 0.6241,
+            "Explained_Variance": 0.6243,
+            "RMSE": 49.9702,
+            "MAE": 36.9133,
+            "Directional_Accuracy_Pct": 59.6
+        },
+        {
+            "Config": "3. Full Pipeline (+ BGE News Embeddings)",
+            "R2": 0.6435,
+            "Explained_Variance": 0.6441,
+            "RMSE": 48.6594,
+            "MAE": 35.0184,
+            "Directional_Accuracy_Pct": 60.27
+        },
+        {
+            "Config": "4. News Alone (Topics + Embeddings)",
+            "R2": 0.5242,
+            "Explained_Variance": 0.5773,
+            "RMSE": 56.2205,
+            "MAE": 41.8214,
+            "Directional_Accuracy_Pct": 60.39
+        }
+    ],
+    "Top_20_Feature_Importances": {
+        "intraday_spread": 0.08584643756013637,
+        "pld_diff_lag1": 0.05628655483913352,
+        "pld_lag_1d": 0.05590414258211704,
+        "emb_pls_02": 0.05331417750404621,
+        "pld_ratio_lag1": 0.03787473806309661,
+        "pld_ratio_lag7": 0.03601935360962525,
+        "emb_pls_06": 0.03047543064849091,
+        "pld_lag_30d": 0.028524498119598906,
+        "emb_pls_04": 0.027786114992565954,
+        "emb_pls_03": 0.02743633077393944,
+        "pld_daily_max": 0.02521377702906172,
+        "pld_diff_lag14": 0.024556003358601135,
+        "cmo_pld_gap": 0.0210677542836086,
+        "news_articles_roll7": 0.01969136947006993,
+        "pld_diff_lag30": 0.018849600686438053,
+        "pld_daily_min": 0.017177047899907805,
+        "pld_diff_lag7": 0.015830072716777988,
+        "pld_rolling_std_30d": 0.014800516347707824,
+        "emb_pls_09": 0.014362045318254996,
+        "news_flood_roll7": 0.013809457209559053
+    }
+}

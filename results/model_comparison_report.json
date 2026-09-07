@@ -1,0 +1,32 @@
+{
+  "benchmark_status": "completed_for_successful_runs",
+  "best_model": {
+    "config": "raw_daily",
+    "model": "XGBoost",
+    "metrics": {
+      "rmse": 49.00949673137734,
+      "mae": 33.82222095073869,
+      "r2": 0.7870671103414458
+    }
+  },
+  "all_results": [
+    {
+      "config": "raw_daily",
+      "metrics": {
+        "RandomForest": {
+          "rmse": 54.352680878505524,
+          "mae": 37.94549227662405,
+          "r2": 0.7381068121251042
+        },
+        "XGBoost": {
+          "rmse": 49.00949673137734,
+          "mae": 33.82222095073869,
+          "r2": 0.7870671103414458
+        },
+        "LSTM": {
+          "error": "not completed in the current CPU-only environment"
+        }
+      }
+    }
+  ]
+}

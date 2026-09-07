@@ -1,0 +1,16 @@
+# Auto-detect text files and normalize line endings to LF on commit
+* text=auto
+
+# Explicit text files
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.html text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.csv filter=lfs diff=lfs merge=lfs -text

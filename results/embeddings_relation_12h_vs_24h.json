@@ -1,0 +1,38 @@
+{
+    "12_Hour": {
+        "Correlation_PLS1_Delta": -0.2514,
+        "Correlation_Sentiment_Delta": 0.0,
+        "Correlation_Volume_Volatility": -0.092,
+        "R2_Market": 0.8233,
+        "R2_Full": 0.8733,
+        "R2_Lift_Pct": 5.0,
+        "RMSE_Market": 73.92,
+        "RMSE_Full": 62.6,
+        "MAE_Market": 41.63,
+        "MAE_Full": 35.64,
+        "Directional_Accuracy_Pct": 56.71,
+        "Feature_Importance": {
+            "Market": 60.7,
+            "News_Topics": 1.9,
+            "News_Embeddings": 37.4
+        }
+    },
+    "24_Hour": {
+        "Correlation_PLS1_Delta": 0.3101,
+        "Correlation_Sentiment_Delta": 0.0,
+        "Correlation_Volume_Volatility": -0.1402,
+        "R2_Market": 0.5729,
+        "R2_Full": 0.6203,
+        "R2_Lift_Pct": 4.74,
+        "RMSE_Market": 53.26,
+        "RMSE_Full": 50.22,
+        "MAE_Market": 37.6,
+        "MAE_Full": 35.39,
+        "Directional_Accuracy_Pct": 55.36,
+        "Feature_Importance": {
+            "Market": 48.5,
+            "News_Topics": 4.2,
+            "News_Embeddings": 47.3
+        }
+    }
+}

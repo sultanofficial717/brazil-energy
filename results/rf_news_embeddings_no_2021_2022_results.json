@@ -1,0 +1,47 @@
+{
+    "Timeline_Filter": "Excluded 2021-2022 (Drought Crisis Anomaly)",
+    "Total_Rows": 11165,
+    "Train_Rows": 8932,
+    "Test_Rows": 2233,
+    "Baseline_Market_Only": {
+        "R2": 0.4908,
+        "Explained_Variance": 0.5344,
+        "RMSE": 61.1101,
+        "MAE": 44.3028
+    },
+    "Market_Plus_Topics": {
+        "R2": 0.4959,
+        "Explained_Variance": 0.5385,
+        "RMSE": 60.8011,
+        "MAE": 44.0899
+    },
+    "Full_Pipeline_With_BGE_Embeddings": {
+        "R2": 0.4943,
+        "Explained_Variance": 0.5396,
+        "RMSE": 60.8948,
+        "MAE": 44.3356
+    },
+    "News_Embeddings_Alone": {
+        "R2": -1.2288,
+        "Explained_Variance": -0.2422,
+        "RMSE": 127.8439,
+        "MAE": 104.1081
+    },
+    "Top_15_Feature_Importances": {
+        "pld_daily_mean": 0.9365960626733275,
+        "pld_daily_max": 0.016817008561177224,
+        "pld_lag_1d": 0.009632088042408659,
+        "pld_rolling_mean_7d": 0.005469756593924144,
+        "pld_lag_7d": 0.004019178019722294,
+        "pld_rolling_mean_30d": 0.003967834061149548,
+        "pld_lag_30d": 0.003512976961471877,
+        "pld_daily_min": 0.0031021965709916335,
+        "pld_lag_14d": 0.002926447813110629,
+        "pld_rolling_mean_14d": 0.0027540643304712438,
+        "cmo_light_load": 0.0017523817000613506,
+        "cmo_weekly_mean": 0.001746767317685441,
+        "cmo_medium_load": 0.0013612596399790228,
+        "cmo_heavy_load": 0.00131027431374112,
+        "news_emb_pca_03": 0.00032410485205925006
+    }
+}

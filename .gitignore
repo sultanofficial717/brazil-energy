@@ -1,0 +1,66 @@
+# ==============================================================================
+# Git Ignore Configuration for Brazilian Energy ML Project
+# ==============================================================================
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Files
+desktop.ini
+Thumbs.db
+.DS_Store
+ehthumbs.db
+
+# Large Datasets & Predictions (> 100 MB GitHub Limit)
+# Note: daily_train_ready.csv (16.5 MB) and test_preds_3d_official.csv (311 KB) are tracked.
+data/merged_news_pld_cmo_by_region_date_clean.csv
+data/merged_news_pld_cmo_by_region_date_with_embeddings.csv
+data/merged_news_pld_cmo_by_region_date_with_embeddings_backup.csv
+data/predictions_12h_with_news.csv
+data/predictions_24h_with_news.csv
+data/test_preds_12h_official.csv
+test_preds_3d_official.csv
+
+# Compressed archives & raw binary model dumps
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.bin
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.joblib
+*.pkl
+
+# Explicitly keep necessary documentation and sample data
+!data/README.md
+!data/daily_train_ready.csv
+!data/test_preds_3d_official.csv

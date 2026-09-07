@@ -1,0 +1,63 @@
+{
+    "Dataset": "News-Active Days Only (Articles >= 1)",
+    "Timeline": "2018-2020 & 2023-2026 (Excluding 2021-2022 Crisis)",
+    "Total_Rows": 6331,
+    "Train_Rows": 5064,
+    "Test_Rows": 1267,
+    "Comparison": [
+        {
+            "Config": "1. Market Only (No News/Embeddings)",
+            "R2": 0.5683,
+            "Explained_Variance": 0.6028,
+            "RMSE": 56.9663,
+            "MAE": 41.4556,
+            "Directional_Accuracy_Pct": 54.85
+        },
+        {
+            "Config": "2. Market + News Topic & Sentiment",
+            "R2": 0.6023,
+            "Explained_Variance": 0.6186,
+            "RMSE": 54.6735,
+            "MAE": 40.5314,
+            "Directional_Accuracy_Pct": 58.33
+        },
+        {
+            "Config": "3. Full Pipeline (+ BGE News Embeddings)",
+            "R2": 0.6749,
+            "Explained_Variance": 0.6753,
+            "RMSE": 49.4314,
+            "MAE": 35.2558,
+            "Directional_Accuracy_Pct": 61.09
+        },
+        {
+            "Config": "4. News Alone (Topics + Embeddings)",
+            "R2": 0.6366,
+            "Explained_Variance": 0.6387,
+            "RMSE": 52.2665,
+            "MAE": 36.9133,
+            "Directional_Accuracy_Pct": 60.06
+        }
+    ],
+    "Top_20_Feature_Importances": {
+        "intraday_spread": 0.10036432103665287,
+        "emb_pls_02": 0.05020094196910888,
+        "pld_rolling_mean_30d": 0.04748422611258037,
+        "emb_pls_03": 0.04002653165327134,
+        "pld_ratio_lag1": 0.03710759054695891,
+        "pld_diff_lag1": 0.03618660094617165,
+        "pld_lag_1d": 0.0333435669807212,
+        "pld_daily_min": 0.03283038908825527,
+        "pld_ratio_lag7": 0.031162731865582216,
+        "cmo_pld_gap": 0.028397641106255134,
+        "pld_daily_max": 0.022990482346013447,
+        "emb_pls_04": 0.02241195091039177,
+        "pld_diff_lag14": 0.021354398010575027,
+        "pld_lag_30d": 0.020787416421726008,
+        "emb_pls_05": 0.016052741066475664,
+        "pld_diff_lag30": 0.015858525974297988,
+        "emb_pls_08": 0.015849895442015163,
+        "emb_pca_02_roll7": 0.015217314173375142,
+        "emb_pls_01": 0.014798927433203673,
+        "pld_daily_mean": 0.013534058863770602
+    }
+}

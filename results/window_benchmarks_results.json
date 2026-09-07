@@ -1,0 +1,48 @@
+{
+    "12_Hour_Window": {
+        "Market_Only": {
+            "R2": 0.8257,
+            "Explained_Variance": 0.8406,
+            "RMSE": 73.4125,
+            "MAE": 42.1338,
+            "Directional_Accuracy_Pct": 53.19
+        },
+        "Full_Pipeline_With_Embeddings": {
+            "R2": 0.8755,
+            "Explained_Variance": 0.8777,
+            "RMSE": 62.0356,
+            "MAE": 35.9804,
+            "Directional_Accuracy_Pct": 54.51
+        },
+        "News_Alone": {
+            "R2": 0.8428,
+            "Explained_Variance": 0.8432,
+            "RMSE": 69.709,
+            "MAE": 38.3047,
+            "Directional_Accuracy_Pct": 50.86
+        }
+    },
+    "3_Day_Window": {
+        "Market_Only": {
+            "R2": 0.7094,
+            "Explained_Variance": 0.7273,
+            "RMSE": 40.5402,
+            "MAE": 30.4969,
+            "Directional_Accuracy_Pct": 55.49
+        },
+        "Full_Pipeline_With_Embeddings": {
+            "R2": 0.736,
+            "Explained_Variance": 0.7412,
+            "RMSE": 38.6435,
+            "MAE": 28.5771,
+            "Directional_Accuracy_Pct": 59.34
+        },
+        "News_Alone": {
+            "R2": 0.6992,
+            "Explained_Variance": 0.706,
+            "RMSE": 41.2506,
+            "MAE": 30.8143,
+            "Directional_Accuracy_Pct": 53.3
+        }
+    }
+}

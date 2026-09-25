@@ -59,8 +59,24 @@ test_preds_3d_official.csv
 *.ckpt
 *.joblib
 *.pkl
+*.db
+*.npz
+
+# Runtime Logs & PIDs
+logs/
+*.pid
+*.log
+
+# Temporary Office Lock Files
+.~lock.*
+*.lock
+
+# Generated News Embedding Caches & Aggregates
+data/news_bge_m3_embeddings*
+data/news_embeddings_by_date_region.csv
 
 # Explicitly keep necessary documentation and sample data
 !data/README.md
 !data/daily_train_ready.csv
 !data/test_preds_3d_official.csv
+

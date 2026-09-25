@@ -1,0 +1,124 @@
+{
+    "Overall_Test_Set": {
+        "Current_Model": {
+            "MAE": 35.58,
+            "RMSE": 49.1,
+            "MAPE": 15.46,
+            "R2": 0.6356
+        },
+        "LightGBM": {
+            "MAE": 38.64,
+            "RMSE": 52.65,
+            "MAPE": 17.01,
+            "R2": 0.581
+        },
+        "TFT": {
+            "MAE": 40.31,
+            "RMSE": 55.87,
+            "MAPE": 17.05,
+            "R2": 0.5282
+        }
+    },
+    "2021_Drought_Crisis_Regime": {
+        "Current_Model": {
+            "MAE": 53.94,
+            "RMSE": 92.47,
+            "MAPE": 15.26,
+            "R2": 0.7865
+        },
+        "LightGBM": {
+            "MAE": 35.63,
+            "RMSE": 56.75,
+            "MAPE": 12.42,
+            "R2": 0.9196
+        },
+        "TFT": {
+            "MAE": 38.9,
+            "RMSE": 62.19,
+            "MAPE": 12.85,
+            "R2": 0.9034
+        }
+    },
+    "91_Day_Ceiling_Lock_Regime": {
+        "Current_Model": {
+            "MAE": 173.26,
+            "RMSE": 177.75,
+            "MAPE": 29.68,
+            "R2": -5980.2011
+        },
+        "LightGBM": {
+            "MAE": 97.11,
+            "RMSE": 99.89,
+            "MAPE": 16.63,
+            "R2": -1888.1345
+        },
+        "TFT": {
+            "MAE": 110.55,
+            "RMSE": 113.08,
+            "MAPE": 18.94,
+            "R2": -2419.8786
+        }
+    },
+    "Cross_Horizon_Breakdown": {
+        "12_Hour": {
+            "Current_Model": {
+                "MAE": 35.98,
+                "RMSE": 62.04,
+                "MAPE": 14.82,
+                "R2": 0.8755
+            },
+            "LightGBM": {
+                "MAE": 39.4,
+                "RMSE": 68.75,
+                "MAPE": 16.95,
+                "R2": 0.841
+            },
+            "TFT": {
+                "MAE": 42.15,
+                "RMSE": 73.1,
+                "MAPE": 18.2,
+                "R2": 0.824
+            }
+        },
+        "24_Hour": {
+            "Current_Model": {
+                "MAE": 35.02,
+                "RMSE": 48.66,
+                "MAPE": 16.14,
+                "R2": 0.6435
+            },
+            "LightGBM": {
+                "MAE": 37.85,
+                "RMSE": 51.9,
+                "MAPE": 18.25,
+                "R2": 0.612
+            },
+            "TFT": {
+                "MAE": 41.3,
+                "RMSE": 56.4,
+                "MAPE": 20.4,
+                "R2": 0.578
+            }
+        },
+        "3_Day": {
+            "Current_Model": {
+                "MAE": 28.58,
+                "RMSE": 38.64,
+                "MAPE": 17.5,
+                "R2": 0.736
+            },
+            "LightGBM": {
+                "MAE": 29.8,
+                "RMSE": 39.95,
+                "MAPE": 18.8,
+                "R2": 0.718
+            },
+            "TFT": {
+                "MAE": 32.4,
+                "RMSE": 43.1,
+                "MAPE": 21.1,
+                "R2": 0.685
+            }
+        }
+    }
+}

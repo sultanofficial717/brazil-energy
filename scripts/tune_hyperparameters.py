@@ -20,7 +20,10 @@ print("SYSTEMATIC HYPERPARAMETER TUNING & OPTIMIZATION PIPELINE")
 print("="*90)
 
 # 1. LOAD CLEAN DATASET
-df = pd.read_csv(get_data_path('merged_news_pld_cmo_by_region_date_clean.csv'))
+csv_path = Path(get_data_path('merged_news_pld_cmo_by_region_date_clean.csv'))
+if not csv_path.exists():
+    csv_path = Path('data/merged_news_pld_cmo_by_region_date_with_embeddings_backup.csv')
+df = pd.read_csv(csv_path)
 df['Date_dt'] = pd.to_datetime(df['Date'])
 df = df.sort_values('Date_dt').reset_index(drop=True)
 

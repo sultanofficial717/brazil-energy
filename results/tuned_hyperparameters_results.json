@@ -1,0 +1,36 @@
+{
+    "Optimal_Hyperparameters": {
+        "PLS_Components": 12,
+        "PCA_Components": 20,
+        "Random_Forest": {
+            "n_estimators": 200,
+            "max_depth": 18,
+            "min_samples_leaf": 2,
+            "max_features": 0.7
+        },
+        "Hist_Gradient_Boosting": {
+            "max_iter": 350,
+            "max_depth": 9,
+            "learning_rate": 0.025,
+            "l2_regularization": 1.5
+        },
+        "Extra_Trees": {
+            "n_estimators": 250,
+            "max_depth": 20,
+            "min_samples_leaf": 2,
+            "max_features": 0.75
+        },
+        "Ensemble_Weights": {
+            "Random_Forest": 0.198,
+            "Hist_Gradient_Boosting": 0.0,
+            "Extra_Trees": 0.802
+        }
+    },
+    "Tuned_Model_Performance": {
+        "R2_Score": 0.8877,
+        "Explained_Variance": 0.8894,
+        "RMSE": 58.9309,
+        "MAE": 34.5832,
+        "Directional_Accuracy_Pct": 57.33
+    }
+}

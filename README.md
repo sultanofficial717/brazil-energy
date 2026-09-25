@@ -6,6 +6,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-F7931E.svg)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0+-11B1B1.svg)](https://xgboost.readthedocs.io/)
 [![Status](https://img.shields.io/badge/Status-Complete%20%26%20Statistically%20Validated-brightgreen.svg)]()
+[![Version](https://img.shields.io/badge/version-v1.1.0-blue.svg)](https://github.com/sultanofficial717/brazil-energy/releases)
 
 An empirical machine learning framework for forecasting electricity spot prices (**PLD** - *Preço de Liquidação das Diferenças*) and the Marginal Operating Cost (**CMO** - *Custo Marginal de Operação*) across the four regional submarkets of the Brazilian Interconnected National Grid (**SIN**). 
 
@@ -248,6 +249,8 @@ brazilian-energy-pld-forecasting/
 │   ├── train_full_timeline_news_benchmark.py # 2018-2026 comprehensive benchmark
 │   ├── train_windows_benchmark.py        # Multi-window evaluation
 │   └── tune_hyperparameters.py           # Hyperparameter search routines
+├── Brazilian_Energy_PLD_CMO_Consolidated_Comprehensive_Report.docx # Formal comprehensive technical & empirical report
+├── build_consolidated_report_docx.py     # Consolidated report generator script
 ├── paths.py                              # Root path proxy
 ├── requirements.txt                      # Pinned Python package dependencies
 ├── .gitignore                            # Excludes .venv, large CSVs, caches, binaries

@@ -1,0 +1,111 @@
+{
+    "stratified_tuned_results": [
+        {
+            "Model Pipeline": "Tuned Random Forest - Without News (Market Baseline)",
+            "R2": 0.9819,
+            "Explained Variance": 0.9819,
+            "RMSE (R$/MWh)": 20.5907,
+            "MAE (R$/MWh)": 7.6354,
+            "MAPE (%)": 4.73
+        },
+        {
+            "Model Pipeline": "Tuned Random Forest - With News Topics",
+            "R2": 0.9813,
+            "Explained Variance": 0.9813,
+            "RMSE (R$/MWh)": 20.9276,
+            "MAE (R$/MWh)": 8.0023,
+            "MAPE (%)": 4.92
+        },
+        {
+            "Model Pipeline": "Tuned Random Forest - With Full Embeddings (PLS+PCA)",
+            "R2": 0.9779,
+            "Explained Variance": 0.978,
+            "RMSE (R$/MWh)": 22.7322,
+            "MAE (R$/MWh)": 9.4421,
+            "MAPE (%)": 5.8
+        },
+        {
+            "Model Pipeline": "Tuned Extra Trees - Without News (Market Baseline)",
+            "R2": 0.9834,
+            "Explained Variance": 0.9835,
+            "RMSE (R$/MWh)": 19.6879,
+            "MAE (R$/MWh)": 6.5031,
+            "MAPE (%)": 4.12
+        },
+        {
+            "Model Pipeline": "Tuned Extra Trees - With Full Embeddings",
+            "R2": 0.9787,
+            "Explained Variance": 0.9787,
+            "RMSE (R$/MWh)": 22.3444,
+            "MAE (R$/MWh)": 8.6327,
+            "MAPE (%)": 5.38
+        },
+        {
+            "Model Pipeline": "Tuned Ensemble Blend - Without News",
+            "R2": 0.9834,
+            "Explained Variance": 0.9834,
+            "RMSE (R$/MWh)": 19.7377,
+            "MAE (R$/MWh)": 6.6654,
+            "MAPE (%)": 4.21
+        },
+        {
+            "Model Pipeline": "Tuned Ensemble Blend - With Full Embeddings",
+            "R2": 0.9788,
+            "Explained Variance": 0.9788,
+            "RMSE (R$/MWh)": 22.2823,
+            "MAE (R$/MWh)": 8.742,
+            "MAPE (%)": 5.44
+        }
+    ],
+    "tuned_hyperparameters_used": {
+        "random_forest": {
+            "n_estimators": 200,
+            "max_depth": 18,
+            "min_samples_leaf": 2,
+            "max_features": 0.7,
+            "random_state": 42,
+            "n_jobs": -1
+        },
+        "extra_trees": {
+            "n_estimators": 250,
+            "max_depth": 20,
+            "min_samples_leaf": 2,
+            "max_features": 0.75,
+            "random_state": 42,
+            "n_jobs": -1
+        },
+        "hist_gradient_boosting": {
+            "max_iter": 350,
+            "max_depth": 9,
+            "learning_rate": 0.025,
+            "l2_regularization": 1.5,
+            "random_state": 42
+        },
+        "latent_dimensions": {
+            "PLS": 12,
+            "PCA": 20
+        },
+        "ensemble_weights": {
+            "Extra_Trees": 0.802,
+            "Random_Forest": 0.198,
+            "HGB": 0.0
+        }
+    },
+    "top_feature_importances": {
+        "pld_daily_mean": 0.6684748789706919,
+        "pld_rolling_mean_7d": 0.1420438300661806,
+        "pld_daily_max": 0.08130087820134926,
+        "pld_lag_1d": 0.05946980233896048,
+        "pld_daily_min": 0.012630414935078238,
+        "pld_rolling_mean_14d": 0.006626879037880911,
+        "pld_lag_7d": 0.0035386590948647844,
+        "pld_lag_30d": 0.0034546286709284274,
+        "cmo_medium_load": 0.003000941329063074,
+        "pld_lag_14d": 0.0029422780722565506,
+        "cmo_light_load": 0.0021876399942332607,
+        "pld_rolling_mean_30d": 0.0019868924774725503,
+        "cmo_weekly_mean": 0.0019419102636251088,
+        "cmo_heavy_load": 0.0017840495779337664,
+        "pls_01": 0.00043937665668653057
+    }
+}

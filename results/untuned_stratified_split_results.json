@@ -1,0 +1,69 @@
+{
+    "results": [
+        {
+            "Pipeline / Model": "Un-tuned RF: Without News (Market Baseline)",
+            "R2": 0.981,
+            "Explained Variance": 0.981,
+            "RMSE (R$/MWh)": 21.0825,
+            "MAE (R$/MWh)": 8.3517,
+            "MAPE (%)": 5.08
+        },
+        {
+            "Pipeline / Model": "Un-tuned RF: With News Topics & Sentiment",
+            "R2": 0.9805,
+            "Explained Variance": 0.9805,
+            "RMSE (R$/MWh)": 21.3844,
+            "MAE (R$/MWh)": 8.6671,
+            "MAPE (%)": 5.25
+        },
+        {
+            "Pipeline / Model": "Un-tuned RF: With Full Embeddings (32 PCA)",
+            "R2": 0.9771,
+            "Explained Variance": 0.9771,
+            "RMSE (R$/MWh)": 23.1786,
+            "MAE (R$/MWh)": 9.9393,
+            "MAPE (%)": 6.0
+        },
+        {
+            "Pipeline / Model": "Un-tuned RF: News Embeddings Alone (Text Only)",
+            "R2": 0.1863,
+            "Explained Variance": 0.1869,
+            "RMSE (R$/MWh)": 138.042,
+            "MAE (R$/MWh)": 106.9118,
+            "MAPE (%)": 94.05
+        },
+        {
+            "Pipeline / Model": "Un-tuned Ensemble: Without News (Market Baseline)",
+            "R2": 0.9796,
+            "Explained Variance": 0.9796,
+            "RMSE (R$/MWh)": 21.867,
+            "MAE (R$/MWh)": 9.3821,
+            "MAPE (%)": 5.93
+        },
+        {
+            "Pipeline / Model": "Un-tuned Ensemble: With Full Embeddings (PLS+PCA)",
+            "R2": 0.9757,
+            "Explained Variance": 0.9757,
+            "RMSE (R$/MWh)": 23.8758,
+            "MAE (R$/MWh)": 10.6838,
+            "MAPE (%)": 6.72
+        }
+    ],
+    "top_features": {
+        "pld_daily_mean": 0.9398759062240553,
+        "pld_daily_max": 0.013899624789395807,
+        "pld_lag_1d": 0.0068942753420540015,
+        "pld_rolling_mean_7d": 0.006597514277823622,
+        "pld_lag_30d": 0.0038530763622372714,
+        "pld_lag_7d": 0.0037716672476089236,
+        "cmo_medium_load": 0.0031028415581611417,
+        "pld_lag_14d": 0.0029510607769919215,
+        "pld_daily_min": 0.0026687284798977977,
+        "pld_rolling_mean_14d": 0.0024410869468312617,
+        "cmo_light_load": 0.001756502702142161,
+        "pld_rolling_mean_30d": 0.001671786740091541,
+        "cmo_weekly_mean": 0.0014108624205666658,
+        "cmo_heavy_load": 0.0013126577560994082,
+        "news_emb_pca_04": 0.000390824347494049
+    }
+}
